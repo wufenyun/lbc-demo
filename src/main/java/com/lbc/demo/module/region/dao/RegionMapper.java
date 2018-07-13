@@ -44,4 +44,20 @@ public interface RegionMapper {
             @Result(property = "timediff",column="timediff")
     })
     List<RegionDto> listAll();
+
+    @Select("SELECT * FROM region where region_name = #{name}")
+    @Results({
+            @Result(property = "regionId",column="region_id"),
+            @Result(property = "parentId",column="parent_id"),
+            @Result(property = "regionName",column="region_name"),
+            @Result(property = "regionEname",column="region_ename"),
+            @Result(property = "adminCode",column="admincode"),
+            @Result(property = "level",column="level"),
+            @Result(property = "longitude",column="longitude"),
+            @Result(property = "latitude",column="latitude"),
+            @Result(property = "zipcode",column="zipcode"),
+            @Result(property = "currency",column="currency"),
+            @Result(property = "timediff",column="timediff")
+    })
+    List<RegionDto> listByName(@Param("name") String name);
 }

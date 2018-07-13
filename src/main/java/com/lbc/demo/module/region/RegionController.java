@@ -17,7 +17,12 @@ public class RegionController {
     private RegionService regionService;
 
     @RequestMapping("region/listAll")
-    public Result listAll() {
-        return regionService.listAll();
+    public Result listAll(String key) {
+        return regionService.listAll(key);
+    }
+
+    @RequestMapping("region/listWithLoad")
+    public Result listWithLoad(String key) {
+        return regionService.listByKey(key);
     }
 }

@@ -1,7 +1,7 @@
 package com.lbc.demo.module.region.dao;
 
 import com.lbc.demo.module.region.dto.RegionDto;
-import com.lbc.exchanger.CacheExchanger;
+import com.lbc.CacheLoader;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -13,23 +13,23 @@ import java.util.List;
  * @date: 2018-06-21 14
  **/
 @Component
-public class RegionExchanger implements CacheExchanger<String,RegionDto>{
+public class RegionLoader implements CacheLoader<String,RegionDto> {
 
     @Autowired
     private RegionMapper regionMapper;
 
     @Override
     public List<RegionDto> load(String key) throws Exception {
-        return regionMapper.listAll();
+        return regionMapper.listByName(key);
     }
 
     @Override
-    public String prelaodingKey() {
+    public String preLoadingKey() {
         return "regionTable";
     }
 
     @Override
-    public List<RegionDto> prelaoding() throws Exception {
+    public List<RegionDto> preLoading() throws Exception {
         return regionMapper.listAll();
     }
 }

@@ -88,8 +88,9 @@
 				</exclusion>
 			</exclusions>
 		</dependency>
+		<!-- https://mvnrepository.com/artifact/com.101tec/zkclient -->
 		<dependency>
-			<groupId>com.github.sgroschupf</groupId>
+			<groupId>com.101tec</groupId>
 			<artifactId>zkclient</artifactId>
 			<version>0.10</version>
 			<exclusions>
@@ -104,7 +105,7 @@
 		<dependency>
 			<groupId>com.github.wufenyun</groupId>
 			<artifactId>lbc</artifactId>
-			<version>1.1.2-SNAPSHOT</version>
+			<version>1.2.0-SNAPSHOT</version>
 		</dependency>
 
 		<!--   *****************************  工具包   *****************************  -->
@@ -112,6 +113,42 @@
 			<groupId>com.alibaba</groupId>
 			<artifactId>fastjson</artifactId>
 			<version>1.2.46</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/com.google.guava/guava -->
+		<dependency>
+			<groupId>com.google.guava</groupId>
+			<artifactId>guava</artifactId>
+			<version>25.0-jre</version>
+		</dependency>
+		<dependency>
+			<groupId>com.github.wufenyun</groupId>
+			<artifactId>lbc</artifactId>
+			<version>1.2.0-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>com.github.wufenyun</groupId>
+			<artifactId>lbc</artifactId>
+			<version>1.2.0-SNAPSHOT</version>
+		</dependency>
+        <dependency>
+            <groupId>com.github.wufenyun</groupId>
+            <artifactId>lbc</artifactId>
+            <version>1.2.0-SNAPSHOT</version>
+        </dependency>
+		<dependency>
+			<groupId>com.github.wufenyun</groupId>
+			<artifactId>lbc</artifactId>
+			<version>1.2.0-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>com.github.wufenyun</groupId>
+			<artifactId>lbc</artifactId>
+			<version>1.2.0-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>com.github.wufenyun</groupId>
+			<artifactId>lbc</artifactId>
+			<version>1.2.0-SNAPSHOT</version>
 		</dependency>
 
 	</dependencies>
