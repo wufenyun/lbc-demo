@@ -20,16 +20,12 @@ public class RegionLoader implements CacheLoader<String,RegionDto> {
 
     @Override
     public List<RegionDto> load(String key) throws Exception {
-        return regionMapper.listByName(key);
+        return regionMapper.listAll();
     }
 
     @Override
     public String preLoadingKey() {
-        return "regionTable";
+        return "allRegion";
     }
 
-    @Override
-    public List<RegionDto> preLoading() throws Exception {
-        return regionMapper.listAll();
-    }
 }

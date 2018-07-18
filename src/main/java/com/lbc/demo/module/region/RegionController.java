@@ -17,12 +17,17 @@ public class RegionController {
     private RegionService regionService;
 
     @RequestMapping("region/listAll")
-    public Result listAll(String key) {
-        return regionService.listAll(key);
+    public Result listAll() {
+        return regionService.listAll();
     }
 
-    @RequestMapping("region/listWithLoad")
-    public Result listWithLoad(String key) {
-        return regionService.listByKey(key);
+    @RequestMapping("region/listAllWithTree")
+    public Result listAllWithTree() {
+        return regionService.listAllWithTree();
+    }
+
+    @RequestMapping("region/getByRegionId")
+    public Result getByRegionId(Integer regionId) {
+        return regionService.getByRegionId(regionId);
     }
 }

@@ -1,6 +1,7 @@
 package com.lbc.demo.config;
 
 
+import com.lbc.config.LbcConfiguration;
 import com.lbc.context.DefaultCacheContext;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -13,16 +14,16 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class LocalCacheConfig {
 
-    /*@Bean()
+    @Bean()
     public DefaultCacheContext config() throws Exception {
         DefaultCacheContext bean = new DefaultCacheContext();
-        Configuration configuration = new Configuration.Builder()
+        LbcConfiguration configuration = new LbcConfiguration.Builder()
                 .lruEliminationConfig(10)
                 .zkMonitorConfig("127.0.0.1:2181","rms")
                 .build();
         bean.setConfiguration(configuration);
 
         return bean;
-    }*/
+    }
 
 }
