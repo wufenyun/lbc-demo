@@ -1,6 +1,6 @@
 package com.lbc.demo.module.region;
 
-import com.lbc.demo.common.param.Result;
+import com.lbc.demo.application.common.param.Result;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;

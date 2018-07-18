@@ -1,4 +1,4 @@
-package com.lbc.demo.config;
+package com.lbc.demo.application.config;
 
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.mybatis.spring.SqlSessionFactoryBean;

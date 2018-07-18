@@ -1,6 +1,6 @@
-package com.lbc.demo.common;
+package com.lbc.demo.application.common;
 
-import com.lbc.demo.common.param.Result;
+import com.lbc.demo.application.common.param.Result;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

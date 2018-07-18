@@ -1,4 +1,4 @@
-package com.lbc.demo.common.param;
+package com.lbc.demo.application.common.param;
 
 /**
  * @description:

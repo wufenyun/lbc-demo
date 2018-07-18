@@ -1,4 +1,4 @@
-package com.lbc.demo.config;
+package com.lbc.demo.application.config;
 
 
 import com.lbc.config.LbcConfiguration;

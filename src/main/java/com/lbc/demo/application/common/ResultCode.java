@@ -1,4 +1,4 @@
-package com.lbc.demo.common;
+package com.lbc.demo.application.common;
 
 public enum ResultCode {
     SUCCESS("200", "成功"),

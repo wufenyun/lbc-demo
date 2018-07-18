@@ -1,10 +1,10 @@
-package com.lbc.demo.aspect;
+package com.lbc.demo.application.aspect;
 
 import com.alibaba.fastjson.JSON;
-import com.lbc.demo.common.ResultCode;
-import com.lbc.demo.common.ServiceException;
-import com.lbc.demo.common.param.BaseResult;
-import com.lbc.demo.common.param.Request;
+import com.lbc.demo.application.common.ResultCode;
+import com.lbc.demo.application.common.ServiceException;
+import com.lbc.demo.application.common.param.BaseResult;
+import com.lbc.demo.application.common.param.Request;
 import com.lbc.demo.util.ValidatorUtil;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.Around;

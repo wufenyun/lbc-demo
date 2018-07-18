@@ -1,10 +1,8 @@
 package com.lbc.demo.module.region;
 
 import com.lbc.LocalCache;
-import com.lbc.demo.common.ServiceBase;
-import com.lbc.demo.common.param.Result;
-import com.lbc.demo.module.region.dao.RegionLoader;
-import com.lbc.demo.module.region.dao.RegionMapper;
+import com.lbc.demo.application.common.ServiceBase;
+import com.lbc.demo.application.common.param.Result;
 import com.lbc.demo.module.region.dto.RegionDto;
 import com.lbc.demo.util.AssertUtil;
 import com.lbc.wrap.QueryingCollection;
@@ -15,8 +13,6 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
-import java.util.List;
 
 /**
  * @description:
